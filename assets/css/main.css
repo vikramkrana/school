@@ -1,0 +1,356 @@
+/* ----------------------------------------------------
+Stylesheet for https://github.com/vikramkrana/school
+
+Updated: 16/12/2020
+Author: Vikram Rana
+
+---------------------------------------------------- */
+
+/* -------------------- Resets --------------------- */
+body,
+form,
+fieldset,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+img {
+  border: 0;
+  vertical-align: bottom;
+  width: 100%;
+}
+/* ------------------- Defaults ------------------- */
+html {
+  height: 100%;
+  overflow: auto;
+  overflow-y: scroll;
+}
+body {
+  height: 100%;
+  font: 100%/1.5 'Montserrat', sans-serif;;
+  background: #fff;
+  color: #333;
+}
+/* ------------------ Typography ------------------- */
+
+p,
+ul,
+ol {
+  font-size: 1em;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.4em;
+}
+h4 {
+  font-size: 1.3em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1.1em;
+}
+
+/* ------------------- Links ---------------------- */
+a {
+  text-decoration: none;
+  color:#333333;
+  outline: 0;
+}
+a:visited {
+  color: #333333;
+}
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+/* ------------------- Fonts ------------------- */
+@font-face {
+	font-family: grandstander;
+	src: url(../fonts/Grandstander-clean.otf);
+}
+@font-face {
+	font-family: GothamLight;
+	src: url(../fonts/GothamLight.ttf);
+}
+@font-face {
+	font-family: GothamMedium;
+	src: url(../fonts/GothamMedium.ttf);
+}
+@font-face {
+	font-family: GothamBook;
+	src: url(../fonts/GothamBook.ttf);
+}
+/* ---------- common css from here ---------- */
+.d-flex{
+  display: flex;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+.align-items-center{
+  align-items: center;
+}
+.flex-btw-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-center-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-center{
+  display: flex;
+  align-items: center;
+}
+.flex-between{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------- Start main css from here ---------- */
+.header-wrap {
+  background: #FFFFFF 0% 0% no-repeat;
+  box-shadow: 0px 1px 10px #0000001A;
+}
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header-left{
+  width: 40%;
+}
+.header-right{
+  width: 60%;
+}
+.header-left .site-logo img{
+  width: 220px;
+}
+.container{
+  padding: 15px 0;
+}
+.toggle-btn{
+  font-size: 24px;
+}
+.toggle-btn::before{
+  margin-left: -60px;
+}
+.header-right .menus{
+  width: 70%;
+}
+.header-right .menu-list{
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+.menu-list,.wallet .money{
+  font-family: grandstander;
+}
+.wallet{
+  box-shadow: 1px 1px 0px #00000029;
+  border: 1px solid #333333;
+  border-radius: 25px;
+  font-size: 18px;
+}
+.wallet .user-icon{
+  background: #BFFE8A;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+}
+.wallet .money{
+  margin: 0 15px 0 5px;
+}
+.breadcrumb{
+  padding: 10px 0 0;
+}
+.breadcrumb-list .item{
+  padding-right: 25px;
+  font-size: 15px;
+  color: #ADBABD;
+  font-weight: 500;
+  position: relative;
+}
+.breadcrumb-list .item::after{
+  content: '';
+  background: url('../images/icons/double-chevron-right.png');
+  position: absolute;
+  width: 8px;
+  height: 7px;
+  top: 8px;
+  right: 8px;
+  background-size: 100% 100%;
+  filter: contrast(0);
+}
+
+
+.img-container{
+  width: 51.4%;
+}
+.img-container img{
+  height: 367px;
+}
+.product-wrap{
+  background: #FBFCF7 ;
+}
+.product-info{
+  padding-left: 95px;
+  width: 40%;
+}
+.product-top{
+  padding-top: 20px;
+  align-items: baseline;
+}
+.product-summary .title h1{
+  font-size: 35px;
+    font-weight: 500;
+}
+.product-summary .sub-title{
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 0 20px 0;
+
+}
+.product-summary .sub-title .category{
+  padding-right: 15px;
+}
+.recommend {
+  background: #FDFFD3 0% 0% no-repeat;
+  box-shadow: 1px 1px 0px #00000029;
+  border: 1px solid #333333;
+  border-radius: 5px;
+  padding: 3px 20px;
+}
+.recomment-content{
+  padding-left: 16px;
+}
+.recomment-content .count{
+  font-size: 18px;
+  font-weight: 700;
+}
+.recomment-content .label{
+  font-size: 10px;
+  font-weight: 300;
+}
+.label-color{
+  color: #A9B7B9;
+  font-size: 14px;
+}
+.product-desc,.choose-slot{
+  padding-bottom: 30px;
+}
+.title-info .stay-date {
+  font-size: 24px;
+}
+.title-info .stay-date .date {
+  font-family: GothamMedium;
+}
+.title-info .stay-date .time {
+  font-family: GothamLight;
+}
+.icons .or-label{
+font-size: 10px;
+}
+.choose-slot .label-color{
+  margin-bottom: 5px;
+}
+.choose-slot .choose-time .time{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 15px;
+
+} 
+.choose-slot .choose-time .time a{
+  border: 1px solid #707070;
+  border-radius: 20px;
+  font-size: 14px;
+  padding: 7px 20px;
+} 
+.choose-slot .choose-time .time .seat{
+  font-size: 12px;
+  color: #8AB7C0;
+  margin-top: 5px;
+} 
+.price-info{
+  padding-bottom: 20px;
+}
+.price-info .price{
+  box-shadow: 2px 2px 0px #0000001A;
+  border-radius: 5px;
+  font-size: 18px;
+  padding: 9px 20px;
+  margin-right: 30px;
+}
+.price-info .real{
+  font-size: 14px;
+  color: #6997A1;
+  font-weight: 500;
+  padding-right: 5px;
+  text-decoration: line-through;
+}
+.price-info .sale{
+  font-size: 18px;
+  font-weight: 700;
+}
+.earn-points a{
+  font-size: 15px;
+  font-weight: 600;
+  color: #FF3A58;
+  text-decoration: underline;
+}
+.buy-buttons .book-class{
+  background: #FF3A58 0% 0% no-repeat;
+  box-shadow: 2px 2px 0px #0000001A;
+  border: 1px solid #FF3A58;
+  border-radius: 5px;
+  color: #fff;
+  font-family: grandstander ;
+  font-size: 16px;
+  padding: 15px;
+  width: 350px;
+  margin-right: 30px;
+}
+.buy-buttons .book-class:hover{
+  background:#fff;
+  color: #FF3A58;
+  cursor: pointer;
+}
+.buy-buttons .share{
+  font-family: grandstander ;
+  font-size: 16px;
+  padding: 15px;
+  box-shadow: 2px 2px 0px #0000001A;
+  border: 1px solid #FF3A58;
+  border-radius: 5px;
+  color: #FF3A58;
+  background: #fff;
+}
+.buy-buttons .share:hover{
+  background: #FDFFD3;
+  border: 1px solid #333;
+  color: #333;
+  cursor: pointer;
+}
