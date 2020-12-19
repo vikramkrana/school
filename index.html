@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>RANA VIKRAM KRISHNA - Responsive Test 2.0</title>
+    <title>RANA VIKRAM KRISHNA - REAL SCHOOL APP</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
@@ -29,13 +29,14 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
   <body>
     <div class="header-wrap">
       <div class="container flex-btw-center">
         <div class="header-left flex-center">
           <div class="toggle-btn fas fa-bars"></div>
-          <div class="site-logo">
+          <div class="site-logo flex-center-center">
             <img src="./assets/images/logo.jpg" alt="Logo" />
           </div>
         </div>
@@ -52,7 +53,20 @@
             <div class="flex-center-center user-icon fas fa-user"></div>
             <div class="money">INR 200</div>
           </div>
+          <div class="mobile-icon">
+            <a href="javascript:void(0);" onclick="myFunction()">
+              <div class="toggle-btn fas fa-bars"></div>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="mobile-menus" id="mobileMenu">
+        <ul class="mobile-menu-list">
+          <li class="item"><a href="#">Masterclasses</a></li>
+          <li class="item"><a href="#">Programs</a></li>
+          <li class="item"><a href="#">Challanges</a></li>
+          <li class="item"><a href="#">Library</a></li>
+        </ul>
       </div>
     </div>
 
@@ -391,7 +405,7 @@
         <p>© 2019 uFaber, All rights reserved uFaber Edutech</p>
       </div>
     </div>
-
+    <script src="./assets/js/main.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
       integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
@@ -409,12 +423,15 @@
         center: true,
         responsive: {
           0: {
-            items: 1,
-          },
-          600: {
             items: 3,
           },
-          1000: {
+          767: {
+            items: 4,
+          },
+          1024: {
+            items: 5,
+          },
+          1200: {
             items: 5,
           },
         },

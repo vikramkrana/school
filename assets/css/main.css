@@ -171,6 +171,23 @@ a:active {
   justify-content: space-between;
   font-size: 14px;
 }
+.header-right .menu-list a:hover,
+.mobile-menu-list a:hover {
+  color: #ff3a58;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+#mobileMenu,
+.mobile-icon {
+  display: none;
+}
+#mobileMenu {
+  padding: 20px;
+  background: #fdffd3;
+}
+#mobileMenu .mobile-menu-list .item {
+  padding: 10px 0px;
+}
 .menu-list,
 .wallet .money {
   font-family: grandstander;
@@ -336,7 +353,8 @@ a:active {
   padding: 7px 20px;
 }
 .choose-slot .choose-time .time a:hover {
-  background: #fdffd3;
+  background: #beffda;
+  border: 0.6000000238418579px solid #02c972;
   transition: all 1s ease;
 }
 .choose-slot .choose-time .time .seat {
@@ -520,6 +538,9 @@ h2.title:before {
   border-radius: 10px;
   margin: 20px 26px 20px 0;
 }
+.post-card-container .post-card:last-child {
+  margin-right: 0;
+}
 .post-card-container .post-card img {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -596,7 +617,8 @@ h2.title:before {
 .slider-wrap .owl-carousel .owl-nav.disabled {
   display: block !important;
 }
-.slider-wrap .owl-carousel .owl-nav .owl-prev {
+.slider-wrap .owl-carousel .owl-nav .owl-prev,
+.owl-dots {
   display: none !important;
 }
 .slider-wrap .owl-carousel .owl-nav .owl-next {
