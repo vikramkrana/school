@@ -722,6 +722,9 @@ h2.title:before {
 .footer-third .store-img img:hover {
   cursor: pointer;
 }
+.footer-mobile{
+    display: none;
+}
 .copyright {
   background: #5a5555;
   text-align: center;

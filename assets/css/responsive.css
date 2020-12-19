@@ -352,15 +352,49 @@
   .step-card .title {
     font-size: 12px;
   }
-  .footer-first .flex-center {
-    padding-bottom: 10px;
-  }
   #mobileMenu {
     padding: 10px 20px;
   }
   #mobileMenu .mobile-menu-list .item {
     padding: 0px 0px 10px;
     font-size: 14px;
+  }
+  .footer-wrap .container{
+      margin: 0;
+      padding: 0;
+  }
+  .footer-top{
+      padding: 30px 10px;
+  }
+  .footer-top button{
+      width: 100%;
+  }
+  .footer-center{
+      display: none;
+  }
+  .footer-mobile{
+      display: block;
+  }
+  .footer-mobile img{
+      max-width: 170px;
+      padding: 0 10px 10px;
+  }
+  .footer-mobile .slogan{
+      font-size: 12px;
+      padding: 0 10px 10px;
+  }
+  .footer-wrap a{
+      font-size: 16px; 
+  }
+  .download-app,.mob-links .link{
+      font-size: 16px;
+      border-top: 1px solid #787272;
+      border-bottom: 1px solid #787272;
+      padding: 10px;
+  }
+  .download-app .icon{
+      font-size: 22px;
+      margin-left: 20px;
   }
 }
 /* Extra small Device. */
@@ -374,29 +408,6 @@
   }
   .step-card {
     width: 100%;
-  }
-  .footer-first,
-  .footer-second {
-    width: 100%;
-    justify-content: center;
-  }
-  .footer-first {
-    text-align: center;
-  }
-  .footer-first img {
-    margin: 0 auto;
-  }
-  .footer-first .flex-center {
-    justify-content: center;
-  }
-  .quick-links {
-    padding: 5px 10px 10px;
-  }
-  .footer-third {
-    flex-direction: column;
-  }
-  .footer-third .social {
-    padding-bottom: 10px;
   }
   .header-right {
     width: 120px;
@@ -419,5 +430,21 @@
   }
   .step-card .title {
     text-align: center;
+  }
+  .download-app, .mob-links .link {
+      font-size: 14px;
+      border-top: 1px solid #787272;
+      border-bottom: 1px solid #787272;
+      padding: 7px;
+  }
+  .footer-wrap a {
+      font-size: 14px;
+  }
+  .buy-buttons .book-class {
+      width: 200px;
+      font-size: 12px;
+  }
+  .buy-buttons .share {
+      font-size: 12px;
   }
 }
